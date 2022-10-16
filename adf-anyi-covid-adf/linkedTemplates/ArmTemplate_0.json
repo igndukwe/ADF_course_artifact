@@ -98,7 +98,8 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": "population_by_age_tsv",
+						"fileName": "population_by_age.tsv",
+						"folderPath": "population",
 						"fileSystem": "raw"
 					},
 					"columnDelimiter": "\t",
@@ -113,7 +114,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/plingest_population_data')]",
+			"name": "[concat(parameters('factoryName'), '/pl_ingest_population_data')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
